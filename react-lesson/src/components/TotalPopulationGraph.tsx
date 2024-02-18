@@ -1,7 +1,3 @@
 export const TotalPopulation = () => {
-	return (
-		<div>
-			TotalPopulation
-		</div>
-	)
-}
+  return <div>TotalPopulation</div>;
+};

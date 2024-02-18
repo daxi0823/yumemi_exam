@@ -1,7 +1,3 @@
 export const YoungPopulation = () => {
-	return (
-		<div>
-			YoungPopulation
-		</div>
-	)
-}
+  return <div>YoungPopulation</div>;
+};

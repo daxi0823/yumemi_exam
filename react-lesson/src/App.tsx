@@ -13,18 +13,16 @@ function App() {
 
   return (
     <BrowserRouter basename="/">
-			<div>
-				<h2>都道府県</h2>
-				<div>
-					{/* チェックボックス */}
-				</div>
-			</div>
-			<Routes>
-        <Route path='/' element={<TotalPopulation/>} />
-        <Route path='young' element={<YoungPopulation />} />
-        <Route path='elderly' element={<ElderlyPopulation />} />
-        <Route path='productive' element={<ProductivePopulation />} />
-			</Routes>
+      <div>
+        <h2>都道府県</h2>
+        <div>{/* チェックボックス */}</div>
+      </div>
+      <Routes>
+        <Route path="/" element={<TotalPopulation />} />
+        <Route path="young" element={<YoungPopulation />} />
+        <Route path="elderly" element={<ElderlyPopulation />} />
+        <Route path="productive" element={<ProductivePopulation />} />
+      </Routes>
     </BrowserRouter>
   );
 }

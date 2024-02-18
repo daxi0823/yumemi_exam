@@ -1,7 +1,3 @@
 export const ProductivePopulation = () => {
-	return (
-		<div>
-			ProductivePopulation
-		</div>
-	)
-}
+  return <div>ProductivePopulation</div>;
+};
