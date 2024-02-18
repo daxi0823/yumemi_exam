@@ -17,9 +17,6 @@ function App() {
 			<div>
 				<h2 className="underline">都道府県</h2>
 				<CheckboxPrefectures />
-				<div>
-					{/* チェックボックス */}
-				</div>
 			</div>
 			<Routes>
         <Route path='/' element={<TotalPopulation/>} />
