@@ -107,5 +107,5 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
 
 	},
-	"include":["./src/**/*", "src/custom.d.ts"]            /* svg等の型ファイル */
+	"include":["./src/**/*", "src/svg.d.ts"]            /* svg等の型ファイル */
 }
