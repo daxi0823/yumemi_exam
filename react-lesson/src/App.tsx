@@ -14,6 +14,7 @@ function App() {
   return (
     <BrowserRouter basename="/">
 			<div>
+				<h2 className="underline">都道府県</h2>
 				<h2>都道府県</h2>
 				<div>
 					{/* チェックボックス */}
