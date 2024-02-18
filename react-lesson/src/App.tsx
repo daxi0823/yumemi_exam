@@ -7,6 +7,7 @@ import { TotalPopulation } from "./components/TotalPopulationGraph";
 import { YoungPopulation } from "./components/YoungPopulationGraph";
 import { ElderlyPopulation } from "./components/ElderlyPopulationGraph";
 import { ProductivePopulation } from "./components/ProductivePopulationGraph";
+import { CheckboxPrefectures } from "./components/CheckboxPrefectures";
 
 function App() {
   const [count, setCount] = useState<number>(0);
@@ -15,7 +16,7 @@ function App() {
     <BrowserRouter basename="/">
 			<div>
 				<h2 className="underline">都道府県</h2>
-				<h2>都道府県</h2>
+				<CheckboxPrefectures />
 				<div>
 					{/* チェックボックス */}
 				</div>
