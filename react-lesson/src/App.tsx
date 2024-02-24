@@ -2,28 +2,20 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { TotalPopulation } from "./components/TotalPopulationGraph";
-import { YoungPopulation } from "./components/YoungPopulationGraph";
-import { ElderlyPopulation } from "./components/ElderlyPopulationGraph";
-import { ProductivePopulation } from "./components/ProductivePopulationGraph";
+import { Router } from "react-router-dom";
+import { Routing } from "./routes/Routes"
 
 function App() {
   const [count, setCount] = useState<number>(0);
 
   return (
-    <BrowserRouter basename="/">
+    <div>
       <div>
         <h2>都道府県</h2>
         <div>{/* チェックボックス */}</div>
       </div>
-      <Routes>
-        <Route path="/" element={<TotalPopulation />} />
-        <Route path="young" element={<YoungPopulation />} />
-        <Route path="elderly" element={<ElderlyPopulation />} />
-        <Route path="productive" element={<ProductivePopulation />} />
-      </Routes>
-    </BrowserRouter>
+			<Routing />
+    </div>
   );
 }
 
