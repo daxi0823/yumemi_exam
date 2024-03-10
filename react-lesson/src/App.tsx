@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { Router } from "react-router-dom";
-import { Routing } from "./routes/Routes"
+import { Routing } from "./routes/Router"
 
 function App() {
   const [count, setCount] = useState<number>(0);
