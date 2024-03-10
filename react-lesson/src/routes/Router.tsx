@@ -5,12 +5,12 @@ import { ElderlyPopulation } from "../pages/ElderlyPopulationGraph";
 import { ProductivePopulation } from "../pages/ProductivePopulationGraph";
 
 export const Routing = () => {
-	return (
-		<Routes>
-			<Route path="/" element={<TotalPopulation />} />
-			<Route path="young" element={<YoungPopulation />} />
-			<Route path="elderly" element={<ElderlyPopulation />} />
-			<Route path="productive" element={<ProductivePopulation />} />
-		</Routes>
-	)
-}
+  return (
+    <Routes>
+      <Route path="/" element={<TotalPopulation />} />
+      <Route path="young" element={<YoungPopulation />} />
+      <Route path="elderly" element={<ElderlyPopulation />} />
+      <Route path="productive" element={<ProductivePopulation />} />
+    </Routes>
+  );
+};
