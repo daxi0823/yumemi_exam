@@ -2,29 +2,20 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { Router } from "react-router-dom";
+import { Routing } from "./routes/Router"
 
 function App() {
-  const [count, setCount] = useState <number> (0);
+  const [count, setCount] = useState<number>(0);
 
   return (
-    <>
+    <div>
       <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h2>都道府県</h2>
+        <div>{/* チェックボックス */}</div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+			<Routing />
+    </div>
   );
 }
 
